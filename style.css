@@ -71,10 +71,31 @@ font-size: 70px;
       background-position: 200% center;
     }
 }
+
 .square {
     background-color:blueviolet;
-    height: 200px;
+    height: 150px;
     width: 100%;
+}
+
+.style-heading {
+    background-color: blueviolet;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.style-block {
+    display: flex;
+    gap: 13px;
+    margin: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.style {
+    border-radius: 15px;
+    height: 200px;
 }
 
 p {
@@ -83,6 +104,7 @@ p {
     line-height: 1.5;
     display: block;
 }
+
 main {
     text-align: center;
 }
@@ -90,6 +112,13 @@ main {
 .tv, .movies {
     display: inline-block;
     height: 250px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.ninetys-hits {
+    display: flex;
+    flex-direction: column;
 }
 
 .hits {
@@ -102,8 +131,38 @@ main {
 
 .song {
     display: flex;
+    gap: 5px;
 }
 
-.movies {
+.song-info {
+    display: flex;
+    background-color: #ff1361;
+    gap: 5px;
+    width: 100%;
+    margin: 12px;
+    justify-content: center;
     border-radius: 10px;
+    height: 180px;
+    align-items: center;
+}
+
+.show-caption {
+    background-color: #ff1361;
+    padding: 20px;
+}
+
+.home-caption {
+    padding: 40px;
+}
+
+@media (max-width: 50em) {
+    .song-info {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    p {
+        padding: 0;
+    }
 }
